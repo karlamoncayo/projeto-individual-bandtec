@@ -1,0 +1,18 @@
+body {font-family: 'Roboto', sans-serif; color: #333; font-size: 20px; margin: 0;}
+
+
+a, button {transition: .3s;}
+
+section {position: relative; padding: 60px 0;}
+
+h2 {font-weight: bold; font-size: 48px; margin: 0 0 2rem; text-align: center;}
+h3 {font-weight: bold; font-size: 38px; margin: 0 0 1rem;}
+
+.verde {color: #309515;}
+.bg-verde {background-color: #309515;}
+.verde-claro {color: #C9DFC3;}
+.bg-verde-claro {background-color: #C9DFC3;}
+.laranja {color: #D19A0B;}
+.bg-laranja {background-color: #D19A0B;}
+.laranja-claro {color: #FFF6E0;}
+.bg-laranja-claro {background-color: rgb(255, 246, 224);}

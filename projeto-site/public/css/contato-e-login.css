@@ -1,0 +1,56 @@
+/* PÁGINA DO CADASTRO */
+
+.cadastro .container {overflow: auto; padding-bottom: 80px; padding-top: 8%;}
+
+.formulario {float: left; width: 500px; padding-top: 3%; border-right: #D19A0B 2px solid;}
+form label, form p{display: block; font-size: 20px; margin-bottom:10px;}
+
+.btn {
+    color: white;
+    background-color: #309515;
+    margin: 20px 0 50px 0;
+    border: 0;
+    width: 25%; 
+    text-transform: uppercase; 
+    margin-left: 30%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.imagem-lateral {float: left; width: 500px; height: 50%; padding-top: 10%;}
+
+.cadastro img {float: right; width: 85%;}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 75%;
+    border-radius: 5px;
+    border: solid 1px #bbbbbb;
+}
+
+.div-radio {margin-bottom: 30px;}
+
+/* PÁGINA DO LOGIN */
+
+.pag-login {background-image: url(../images/background-login.png); text-align: center; padding: 50px 0; padding-top: 10%; padding-bottom: 10%;}
+.pag-login h1 {margin-bottom: 40px;}
+.pag-login .input-padrao {width: 50%; display: inline-block;}
+.box-login {
+    display: inline-block;
+    background-color: white;
+    box-shadow:  15px 15px 5px 2px #C9DFC3;
+    padding: 60px 20px 0px 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+.pag-login .btn {display: block; float: none; margin: auto;}
+
+/* EXTRA */
+
+.extra {margin: 10px;}
+.extra img {height: 50px; visibility: hidden;}
+.extra .msg_erro {background-color:  #e7b9c4; color: black; visibility: hidden;}

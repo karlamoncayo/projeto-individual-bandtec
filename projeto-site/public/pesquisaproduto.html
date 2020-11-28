@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/iconVegan.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/pesquisa.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Pesquisa de produtos</title>
+</head>
+
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+
+</script>
+
+<body onload="verificar_autenticacao()">
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html"> O que é veganismo</a></li>
+                    <li><a href="index.html"> Quem sou</a></li>
+                    <li><a href="index.html">Principais Marcas</a></li>
+                    <li><a href="index.html"> Contato</a></li>
+                    <li><a href="#pesquisaproduto"> Pesquisa de produtos</a></li>
+                    <li> Bem-vindo (a), <b id="b_usuario"></b></li>
+                    <li><a href="" onclick="logoff()">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="pesquisaBox">
+        <div class="container">
+            <form>
+                <div>
+                    <select>
+                        <option>Selecione uma categoria: </option>
+                        <option>Bebidas Não Alcoólicas</option>
+                        <option>Biscoitos, Cookies, Salgadinhos e Snacks</option>
+                        <option>Conservas</option>
+                        <option>Bebidas Alcoólicas</option>
+                        <option>Material de Limpeza e Higiene</option>
+                        <option>Produtos para Casa e Jardim</option>
+                        <option>Higiene Pessoal e Cuidados</option>
+                        <option>Infantil</option>
+                        <option>Barba e Bigode</option>
+                        <option>Depilação</option>
+                        <option>Cosméticos</option>
+                        <option>Unhas</option>
+                        <option>Tintura capilar</option>
+                        <option>tatuagem</option>
+                        <option>Bolsas, Calçados, Roupas e Outras Veganices</option>
+                        <option>Perfumes</option>
+                        <option>Maquiagem</option>
+                        <option>Produtos para Animais</option>
+                        <option>Aminoácidos, Fibras, Proteínas e Suplementos</option>
+                    </select>
+                    <button type="submit"><strong>Pesquisar</strong></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div id="naoAlcoolicos" style="display: block;">
+            <h2 class="laranja">Bebidas não-alcoólicas</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
+                <tr>
+                    <td><strong>Suco</strong></td>
+                    <td><strong>Suco</strong></td>
+                    <td><strong>Suco</strong></td>
+                    <td><strong>Refrigerantes</strong></td>
+                </tr>
+
+                <tr>
+                    <td>Mupy</td>
+                    <td>Aurora - Suco de Uva Tinto</td>
+                    <td>Greenpeople</td>
+                    <td>Guaraná Cruzeiro</td>
+                </tr>
+                <tr>
+                    <td><strong>Smoothies</strong></td>
+                    <td><strong>Smoothies</strong></td>
+                    <td><strong>Néctar</strong></td>
+                    <td><strong>Refrigerantes</strong></td>
+                </tr>
+                <tr>
+                    <td>ViaPax Bio (Orgânico)</td>
+                    <td>Native</td>
+                    <td>ViaPax Bio (Orgânico)</td>
+                    <td>Gloops</td>
+                </tr>
+                <tr>
+                    <td><strong>Néctar</strong></td>
+                    <td><strong>Bebida à Base de <br />Guaraná</strong></td>
+                    <td><strong>Bebida à Base de <br />Guaraná</strong></td>
+                    <td><strong>Xarope</strong></td>
+                </tr>
+                <tr>
+                    <td>Native</td>
+                    <td>Convenção - Groselha, <br />Guaraná, Uva e Açaí</td>
+                    <td>Hemmer - de Framboesa, <br />Groselha e de Guaraná</td>
+                    <td>Juréia</td>
+                </tr>
+            </table>
+        </div>
+        <div id="alcoolicos" style="display: block;">
+            <h2 class="laranja">Bebidas alcoólicas</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
+                <tr>
+                    <td><strong>Brandy</strong></td>
+                    <td><strong>Aguardente</strong></td>
+                    <td><strong>Cachaça</strong></td>
+                    <td><strong>Catuaba</strong></td>
+                </tr>
+
+                <tr>
+                    <td>Casa Valduga</td>
+                    <td>Sanhaçu</td>
+                    <td>Costa Brava</td>
+                    <td>Selvagem</td>
+                </tr>
+                <tr>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Cerveja</strong></td>
+                </tr>
+                <tr>
+                    <td>Cerveja Hemmer</td>
+                    <td>Alvania</td>
+                    <td>Coruja</td>
+                    <td>Germânia</td>
+                </tr>
+                <tr>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Conhaque</strong></td>
+                    <td><strong>Espumantes</strong></td>
+                    <td><strong>Espumantes</strong></td>
+                </tr>
+                <tr>
+                    <td>Wienbier</td>
+                    <td>Presidente</td>
+                    <td>Salton</td>
+                    <td>Casa Valduga</td>
+                </tr>
+                <tr>
+                    <td><strong>Gin</strong></td>
+                    <td><strong>Grappa</strong></td>
+                    <td><strong>Licor</strong></td>
+                    <td><strong>Rum</strong></td>
+                </tr>
+                <tr>
+                    <td>Markoff</td>
+                    <td>Casa Valduga</td>
+                    <td>Cointreau</td>
+                    <td>Malibu</td>
+                </tr>
+                <tr>
+                    <td><strong>Vinhos</strong></td>
+                    <td><strong>Vinhos</strong></td>
+                    <td><strong>Vodka</strong></td>
+                    <td><strong>Whisky</strong></td>
+                </tr>
+                <tr>
+                    <td>Casa Valduga</td>
+                    <td>Saint Germain</td>
+                    <td>Markoff</td>
+                    <td>J&B</td>
+                </tr>
+            </table>
+        </div>
+        <div id="maquiagem" style="display: block;">
+            <h2 class="laranja">Maquiagens</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
+                <tr>
+                    <td><strong>Brandy</strong></td>
+                    <td><strong>Aguardente</strong></td>
+                    <td><strong>Cachaça</strong></td>
+                    <td><strong>Catuaba</strong></td>
+                </tr>
+
+                <tr>
+                    <td>Casa Valduga</td>
+                    <td>Sanhaçu</td>
+                    <td>Costa Brava</td>
+                    <td>Selvagem</td>
+                </tr>
+                <tr>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Cerveja</strong></td>
+                </tr>
+                <tr>
+                    <td>Cerveja Hemmer</td>
+                    <td>Alvania</td>
+                    <td>Coruja</td>
+                    <td>Germânia</td>
+                </tr>
+                <tr>
+                    <td><strong>Cerveja</strong></td>
+                    <td><strong>Conhaque</strong></td>
+                    <td><strong>Espumantes</strong></td>
+                    <td><strong>Espumantes</strong></td>
+                </tr>
+                <tr>
+                    <td>Wienbier</td>
+                    <td>Presidente</td>
+                    <td>Salton</td>
+                    <td>Casa Valduga</td>
+                </tr>
+                <tr>
+                    <td><strong>Gin</strong></td>
+                    <td><strong>Grappa</strong></td>
+                    <td><strong>Licor</strong></td>
+                    <td><strong>Rum</strong></td>
+                </tr>
+                <tr>
+                    <td>Markoff</td>
+                    <td>Casa Valduga</td>
+                    <td>Cointreau</td>
+                    <td>Malibu</td>
+                </tr>
+                <tr>
+                    <td><strong>Vinhos</strong></td>
+                    <td><strong>Vinhos</strong></td>
+                    <td><strong>Vodka</strong></td>
+                    <td><strong>Whisky</strong></td>
+                </tr>
+                <tr>
+                    <td>Casa Valduga</td>
+                    <td>Saint Germain</td>
+                    <td>Markoff</td>
+                    <td>J&B</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p>© Copyright Mas nem peixe? Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

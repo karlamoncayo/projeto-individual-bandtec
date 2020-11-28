@@ -1,0 +1,37 @@
+#banner {width: 100%; height: 100vh; background: url('../images/banner1.jpg') no-repeat center; background-size: cover;}
+#banner .banner-inner {width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;}
+
+#o-que-e-o-veganismo {padding-bottom: 0; padding-top: 0; width: 100%; position: relative;}
+#o-que-e-o-veganismo > div {display: flex; margin-top: 2rem;}
+#o-que-e-o-veganismo .oqev-image {background: url('../images/image-1.jpg') no-repeat center; background-size: cover; width: 50%; border-radius: 0 60px;}
+#o-que-e-o-veganismo .oqev-content {text-align: justify; padding: 7rem 2rem; font-size: 20px; width: 50%; position: relative; margin-top: 4rem;}
+.linkVegan{text-decoration: none; color: #309515;}
+
+#quem-sou {background: #828282 url('../images/v-marca.png') left center no-repeat; background-size: auto 80%; color: white; padding: 3rem;}
+#quem-sou h3 {font-weight: normal; font-size: 43px;}
+#quem-sou h4 {font-weight: bold; font-size: 23px; margin-bottom: 1rem;}
+#quem-sou .team-pic {border-radius: 100px; width: 320px; height: 400px;}
+
+.linked-icon{width: 11%; border-radius: 8px; transition: 0.2s;}
+.linked-icon:hover{filter: brightness(130%); transform: scale(1.4); transition: 0.2s;}
+.github-icon{background-color: white; margin-left: 5%; padding: 2px; width: 10%; border-radius: 11px; transition: 0.2s;}
+.github-icon:hover{filter: brightness(200%); transform: scale(1.4);}
+
+#marcas table{padding-top: 3%;}
+#marcas td, th {text-align: center;}
+#marcas td{padding-top: 2%;}
+#marcas img{width: 120px; height: 120px; border-radius: 10%;}
+#marcas img:hover{filter: brightness(100%); transform: scale(1.2);}
+
+#contato {height: 110vh; background: url('../images/image-2.png') no-repeat center; background-size: cover; color: white;}
+#contato p{text-align: center;}
+form {padding-top: 2rem; margin-left: 33%;}
+form input, form textarea, form button {display: block;  margin-bottom: 10px; width: 50%; background-color: rgba(0, 0, 0, .7); border-color: rgba(0, 0, 0, .7); color: white;}
+form textarea {height: 200px; ;}
+form button {height: 50px; width: 90px; text-transform: uppercase; margin-left: 20%;}
+form ::placeholder {color: #EEEEEE; font-size: 17px; line-height: 23px; padding: 5px ;}
+form input { height: 50px;}
+
+::-webkit-scrollbar-track {background-color:#FFF6E0;}
+::-webkit-scrollbar {width: 6px; background: #309515;}
+::-webkit-scrollbar-thumb {background: #C9DFC3;}

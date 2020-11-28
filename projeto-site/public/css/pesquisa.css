@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; }
+
+#pesquisaBox {height: 30vh; background: url('../images/imagempesquisa3.png') no-repeat center; background-size: cover; color: #000000; }
+form {padding-top: 4rem;}
+form select, button {display: block;  margin-bottom: 20px; width: 35%; background-color: rgba(0, 0, 0, .7); border-color: rgba(0, 0, 0, .7); color: white;}
+form select {color: #D19A0B; font-size: 20px; line-height: 23px; padding: 10px ; height: 50px; margin-left: 35%;}
+form button {height: 50px; width: 10%; text-transform: uppercase; color: #D19A0B; margin-left: 47%}
+select option{background-color: rgba(0, 0, 0, .7);}
+
+table {padding-top: 2rem; padding: 20px; border: 2px solid; text-align: center; margin-left: 10%;}
+table caption {background-color:rgba(130, 130, 130, .8); padding: 15px; font-size: 15px;}
