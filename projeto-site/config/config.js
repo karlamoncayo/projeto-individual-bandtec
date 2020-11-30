@@ -1,9 +1,9 @@
 module.exports = {
   production: {
-    username: 'masnempeixe',
-    password: '#Gf41112983899',
-    database: 'masnempeixe',
-    host: 'masnempeixe.database.windows.net',
+    username: 'masnempeixe', // username do meu banco de dados no Azure
+    password: '#Gf41112983899', // senha do meu banco de dados no Azure
+    database: 'masnempeixe', // banco de dados no Azure
+    host: 'masnempeixe.database.windows.net', // host do meu banco de dados no Azure
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {

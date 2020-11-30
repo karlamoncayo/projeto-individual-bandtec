@@ -8,7 +8,7 @@ let sessoes = [];
 
 /* Enviar formulário de cadastro */
 app.post('/contato', function(req,res){
-	Contato.create({
+	Contato.create({ // Pega o objeto Contato criado no Models para criar um insert das informações nos campos especificados.
 		nomeContato: req.body.nomeContato,
 		emailContato: req.body.emailContato,
 		telefoneContato: req.body.telefoneContato,
@@ -19,23 +19,5 @@ app.post('/contato', function(req,res){
 		res.send("Erro ao enviar!" + erro);
 	})
 });
-
-
-/*router.post('/contato', function(req, res, next) {
-	console.log('Enviando formulário de contato!');
-	
-	Contato.create({
-		nomeContato: req.body.nomeContato,
-		emailContato: req.body.emailContato,
-		telefoneContato: req.body.telefoneContato,
-		mensagemContato: req.body.mensagemContato
-	}).then(resultado => {
-		console.log(`Mensagem enviada: ${resultado}`)
-        res.send(resultado);
-    }).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-  	});
-});*/
 
 module.exports = router;

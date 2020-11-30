@@ -32,6 +32,8 @@ form button {height: 50px; width: 90px; text-transform: uppercase; margin-left: 
 form ::placeholder {color: #EEEEEE; font-size: 17px; line-height: 23px; padding: 5px ;}
 form input { height: 50px;}
 
+.div_noneForm{background-color: #309515; color: white; padding: 5px; width: 70%; margin-bottom: 5px;}
+
 ::-webkit-scrollbar-track {background-color:#FFF6E0;}
 ::-webkit-scrollbar {width: 6px; background: #309515;}
 ::-webkit-scrollbar-thumb {background: #C9DFC3;}

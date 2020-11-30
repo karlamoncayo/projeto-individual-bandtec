@@ -45,7 +45,7 @@ module.exports = (sequelize, DataTypes) => {
 		}
 	}, 
 	{
-		tableName: 'usuario', 
+		tableName: 'usuario', // Nome da tabela igual ao que está no banco de dados
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,

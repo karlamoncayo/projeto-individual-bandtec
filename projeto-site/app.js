@@ -26,7 +26,7 @@ app.post('/contato', function (req, res) {
         telefoneContato: req.body.telefoneContato,
         mensagemContato: req.body.mensagemContato
     }).then(function () {
-        res.send(console.log("Deu certo!"));
+        res.sendFile(__dirname + "public/index.html");
     }).catch(function (erro) {
         res.send("Erro ao enviar!" + erro);
     })

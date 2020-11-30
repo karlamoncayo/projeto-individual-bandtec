@@ -25,6 +25,7 @@
                     <li><a href="#marcas">Principais Marcas</a></li>
                     <li><a href="#contato"> Contato</a></li>
                     <li><a href="pesquisaproduto.html"> Pesquisa de produtos</a></li>
+                    <li><a href="cadastro.html"> Cadastro</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
@@ -185,16 +186,23 @@
             <form action="/contato" method="POST">
                 <div>
                     <div>
-                        <input type="text" placeholder="Nome" name="nomeContato">
-                        <input type="text" placeholder="E-mail" name="emailContato">
-                        <input type="text" placeholder="Telefone" name="telefoneContato">
+                        <input type="text" placeholder="Nome" name="nomeContato" id="nomeContato">
+                        <input type="text" placeholder="E-mail" name="emailContato" id="emailContato">
+                        <input type="text" placeholder="Telefone" name="telefoneContato" id="telefoneContato" maxlength="11">
                     </div>
                     <div>
-                        <textarea type="text" placeholder="Mensagem" name="mensagemContato"></textarea>
+                        <textarea type="text" placeholder="Mensagem" name="mensagemContato" oninput="validandoMsg()" id="mensagemContato"></textarea>
+                        <p>Restam <strong id="caracter_rest">256</strong> caracteres!</p>
                             <div>
-                                <button type="submit" name="enviar">Enviar</button>
+                                <button type="submit" name="enviar" onclick="validarContato()">Enviar</button>
                             </div>
                     </div>
+                    <div id="div_msgEmail" style="display: none;" class="div_noneForm">"Insira um endereço de e-mail
+                        válido!"</div>
+                    <div id="div_msgNome" style="display: none;" class="div_noneForm">"Nome não informado, por favor
+                        preencha este campo!"</div>
+                    <div id="div_msgMensagem" style="display: none;" class="div_noneForm">"Mensagem não informada!"</div>
+                    <div id="div_msgTelefone" style="display: none;" class="div_noneForm">"Telefone não informada!"</div>
                 </div>
             </form>
         </div>
@@ -210,3 +218,41 @@
 </body>
 
 </html>
+
+<script>
+    /*function validarContato(){
+        var nome = telefoneContato.value;
+        var email = emailContato.value;
+        var telefone = telefoneContato.value;
+        var mensagem = mensagemContato.value;
+
+        div_msgEmail.style = "display: none";
+        div_msgNome.style = "display: none";
+        div_msgMensagem.style = "display: none";
+        div_msgTelefone.style = "display: none";
+
+        if (email == "" || email.indexOf('.') == -1 || email.indexOf('@') == -1) {
+            alert("Não informado");
+            return false;
+        }
+        else if (nome == "") {
+            div_msgNome.style = "display: block";
+            return false;
+        }
+        else if (mensagem == "") {
+            div_msgMensagem.style = "display: block";
+            return false;
+        }
+        else if (telefone == "") {
+            div_msgTelefone.style = "display: block";
+            return false;
+        }
+        return true;
+    }
+
+    function validandoMsg() {
+        let qtd = txt_area.value.length;
+        let rest = 256 - qtd;
+        caracter_rest.innerHTML = rest;
+    }*/
+</script>
