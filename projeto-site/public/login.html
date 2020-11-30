@@ -36,12 +36,12 @@
         <div class="container">
             <div class="box-login">
                 <h1 class="laranja">Login</h1>
-                <form id="form_login" method="post" onsubmit="return entrar()">
+                <form id="form_login" method="POST" onsubmit="return entrar()">
                     Email:
-                    <input type="text" class="input-padrao" name="login">
+                    <input type="text" class="input-padrao" name="emailLogin">
                     <br>
                     Senha:
-                    <input type="password" class="input-padrao" name="senha">
+                    <input type="password" class="input-padrao" name="senhaLogin">
                     <br>
                     <button id="btn_entrar" class="btn">Entrar</button>
                 </form>
@@ -76,14 +76,14 @@
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
-            body: formulario
+            body: form_login
         }).then(resposta => {
-
+            console.log('teste' , resposta);
             if (resposta.ok) {
 
                 resposta.json().then(json => {
 
-                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.login_usuario_meuapp = json.emailLogin;
                     sessionStorage.nome_usuario_meuapp = json.nome;
 
                     window.location.href = 'pesquisaproduto.html';
@@ -103,7 +103,7 @@
         return false;
     }
 
-    /*function aguardar() {
+    function aguardar() {
         btn_entrar.disabled = true;
         img_aguarde.style.visibility = 'visible';
         div_erro.style.visibility = 'hidden';
@@ -114,6 +114,6 @@
         img_aguarde.style.visibility = 'hidden';
         div_erro.style.visibility = 'visible';
         div_erro.innerHTML = resposta;
-    }*/
+    }
 
 </script>
