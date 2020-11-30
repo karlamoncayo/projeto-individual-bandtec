@@ -76,7 +76,7 @@
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
-            body: form_login
+            body: formulario
         }).then(resposta => {
             console.log('teste' , resposta);
             if (resposta.ok) {
