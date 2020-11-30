@@ -7,5 +7,28 @@ form select {color: #D19A0B; font-size: 20px; line-height: 23px; padding: 10px ;
 form button {height: 50px; width: 10%; text-transform: uppercase; color: #D19A0B; margin-left: 47%}
 select option{background-color: rgba(0, 0, 0, .7);}
 
-table {padding-top: 2rem; padding: 20px; border: 2px solid; text-align: center; margin-left: 10%;}
-table caption {background-color:rgba(130, 130, 130, .8); padding: 15px; font-size: 15px;}
+#tabelas{padding-top: 2rem; background-color: rgb(255, 246, 224);}
+#tabelas table {padding-top: 3rem; padding: 20px; border: 2px dotted; text-align: center; margin-left: 10%;}
+#tabelas th,td {border: 1px solid;}
+#tabelas table caption {background-color:rgba(130, 130, 130, .8); padding: 15px; font-size: 15px;}
+
+.div_comidas{float: left; width: 100%; padding-top: 2rem; padding-bottom: 3rem;}
+.div_comidas strong{font-size: 30px;}
+.div_comidas img{width: 600px; height: 400px; padding-top: 5%;}
+.div_textEsquerda{text-align: justify; width: 45%; float: left; padding-top: 12%; margin-left: 4%;}
+.div_textDireita{text-align: justify; width: 45%; float: right; padding-top: 12%; margin-right: 4%;}
+.div_imgDireita{width: 40%; border-radius: 0% 0% 0% 20%; float: right;}
+.div_imgEsquerda{width: 40%; border-radius: 0% 0% 20% 0%; float: left;}
+
+::-webkit-scrollbar-track {background-color:#FFF6E0;}
+::-webkit-scrollbar {width: 6px; background: #309515;}
+::-webkit-scrollbar-thumb {background: #C9DFC3;}
+
+
+.boxReceitas {color: #333333; margin: 22px; margin-top: 0; background-color: #E3E3E3; padding-bottom: 2rem;}
+.boxReceitas p{text-align: center;}
+/*footer {height: 70px; background-color: #E3E3E3;}*/
+
+.rodape{background-color: #E3E3E3; height: 70px;}
+.rodape p{padding-top: 22px; text-align: center;}
+

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/pesquisa.css">
-    <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="funcoes.js"></script>
     <title>Pesquisa de produtos</title>
@@ -33,31 +32,16 @@
             </nav>
         </div>
     </header>
+    <main>
     <section id="pesquisaBox">
         <div class="container">
             <form>
                 <div>
                     <select>
                         <option>Selecione uma categoria: </option>
-                        <option>Bebidas Não Alcoólicas</option>
-                        <option>Biscoitos, Cookies, Salgadinhos e Snacks</option>
-                        <option>Conservas</option>
                         <option>Bebidas Alcoólicas</option>
-                        <option>Material de Limpeza e Higiene</option>
-                        <option>Produtos para Casa e Jardim</option>
-                        <option>Higiene Pessoal e Cuidados</option>
-                        <option>Infantil</option>
-                        <option>Barba e Bigode</option>
-                        <option>Depilação</option>
                         <option>Cosméticos</option>
-                        <option>Unhas</option>
-                        <option>Tintura capilar</option>
-                        <option>tatuagem</option>
-                        <option>Bolsas, Calçados, Roupas e Outras Veganices</option>
-                        <option>Perfumes</option>
-                        <option>Maquiagem</option>
-                        <option>Produtos para Animais</option>
-                        <option>Aminoácidos, Fibras, Proteínas e Suplementos</option>
+                        <option>Higiene pessoal</option>
                     </select>
                     <button type="submit"><strong>Pesquisar</strong></button>
                 </div>
@@ -65,112 +49,230 @@
         </div>
     </section>
 
-    <section>
-        <div id="naoAlcoolicos" style="display: block;">
-            <h2 class="laranja">Bebidas não-alcoólicas</h2>
-            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela w3-table w3-striped">
-                <tr>
-                    <td><strong>Suco</strong></td>
-                    <td><strong>Suco</strong></td>
-                    <td><strong>Suco</strong></td>
-                    <td><strong>Refrigerantes</strong></td>
-                </tr>
+    <section id="tabelas">
 
+        <div id="cosmeticos" style="display: block;">
+            <h2 class="laranja">Cosméticos</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
-                    <td>Mupy</td>
-                    <td>Aurora - Suco de Uva Tinto</td>
-                    <td>Greenpeople</td>
-                    <td>Guaraná Cruzeiro</td>
+                    <td colspan="4"><strong>Adstringente e/ou Toner Facial</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>Smoothies</strong></td>
-                    <td><strong>Smoothies</strong></td>
-                    <td><strong>Néctar</strong></td>
-                    <td><strong>Refrigerantes</strong></td>
+                    <td>Arte dos Aromas</td>
+                    <td>Orglamix </td>
+                    <td>Colourpop </td>
+                    <td>Medusa’s Make-Up </td>
                 </tr>
                 <tr>
-                    <td>ViaPax Bio (Orgânico)</td>
-                    <td>Native</td>
-                    <td>ViaPax Bio (Orgânico)</td>
-                    <td>Gloops</td>
+                    <td>Kypris </td>
+                    <td>Kani Botanicals</td>
+                    <td>Milk Makeup </td>
+                    <td>Pacifica </td>
                 </tr>
                 <tr>
-                    <td><strong>Néctar</strong></td>
-                    <td><strong>Bebida à Base de <br />Guaraná</strong></td>
-                    <td><strong>Bebida à Base de <br />Guaraná</strong></td>
-                    <td><strong>Xarope</strong></td>
+                    <td>Ecco Bella </td>
+                    <td>Weleda </td>
+                    <td>Lua Branca </td>
+                    <td>CARE Natural Beauty</td>
                 </tr>
                 <tr>
-                    <td>Native</td>
-                    <td>Convenção - Groselha, <br />Guaraná, Uva e Açaí</td>
-                    <td>Hemmer - de Framboesa, <br />Groselha e de Guaraná</td>
-                    <td>Juréia</td>
+                    <td colspan="4"><strong>Água Micelar</strong></td>
+                </tr>
+                <tr>
+                    <td>Origens Fitocosméticos Artesanais </td>
+                    <td>Pacifica </td>
+                    <td>Miristica Biocosmética Vegana</td>
+                    <td>Orglamix </td>
+                </tr>
+                <tr>
+                    <td>Davene </td>
+                    <td>Brisa no Ar </td>
+                    <td>Magia Bothanica </td>
+                    <td>Biomátika </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Água Termal</strong></td>
+                </tr>
+                <tr>
+                    <td>WNF</td>
+                    <td>Livealoe </td>
+                    <td>Natucera </td>
+                    <td>Pachamama</td>
+                </tr>
+                <tr>
+                    <td>Unevie - Fresh</td>
+                    <td>Cativa Natureza - Hidrolato</td>
+                    <td>Vizcaya </td>
+                    <td>Afectti Cosmética Artesanal & Yenzah</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Hidratante para as Mãos</strong></td>
+                </tr>
+                <tr>
+                    <td>Livealoe</td>
+                    <td>Vyvedas </td>
+                    <td>Sal da Terra Saboaria</td>
+                    <td>Davene </td>
+                </tr>
+                <tr>
+                    <td>Weleda</td>
+                    <td>Surya</td>
+                    <td>Avora</td>
+                    <td>Cativa Natureza </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Hidratante/Máscara – Cabelo e Pontas</strong></td>
+                </tr>
+                <tr>
+                    <td>Boni Natural</td>
+                    <td>Wella</td>
+                    <td>Trusshair</td>
+                    <td>Skala</td>
+                </tr>
+                <tr>
+                    <td>Arvensis </td>
+                    <td>Unevie </td>
+                    <td>Salon Line </td>
+                    <td>Haskell</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Coloração Permanente, Tonalizante e/ou  Henna </strong></td>
+                </tr>
+                <tr>
+                    <td>Avora</td>
+                    <td>Lola</td>
+                    <td>Cadiveu </td>
+                    <td>Keune </td>
+                </tr>
+                <tr>
+                    <td>Arvensis </td>
+                    <td>Henna Color Lab</td>
+                    <td>Kamaleão Collor</td>
+                    <td>Surya</td>
                 </tr>
             </table>
         </div>
-        <div id="alcoolicos" style="display: block;">
-            <h2 class="laranja">Bebidas alcoólicas</h2>
+        <div id="higienePessoal" style="display: block;">
+            <h2 class="laranja">Higiene pessoal</h2>
             <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
-                    <td><strong>Brandy</strong></td>
-                    <td><strong>Aguardente</strong></td>
-                    <td><strong>Cachaça</strong></td>
-                    <td><strong>Catuaba</strong></td>
-                </tr>
-
-                <tr>
-                    <td>Casa Valduga</td>
-                    <td>Sanhaçu</td>
-                    <td>Costa Brava</td>
-                    <td>Selvagem</td>
+                    <td colspan="4"><strong>Desodorante</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Cerveja</strong></td>
+                    <td>Crystal</td>
+                    <td>Weleda </td>
+                    <td>Vyvedas </td>
+                    <td>Livealoe </td>
                 </tr>
                 <tr>
-                    <td>Cerveja Hemmer</td>
-                    <td>Alvania</td>
-                    <td>Coruja</td>
-                    <td>Germânia</td>
+                    <td>Alva </td>
+                    <td>Red Apple</td>
+                    <td>Skala </td>
+                    <td>Boni Natural</td>
                 </tr>
                 <tr>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Conhaque</strong></td>
-                    <td><strong>Espumantes</strong></td>
-                    <td><strong>Espumantes</strong></td>
+                    <td colspan="4"><strong>Enxaguante/Antisséptico Bucal</strong></td>
                 </tr>
                 <tr>
-                    <td>Wienbier</td>
-                    <td>Presidente</td>
-                    <td>Salton</td>
-                    <td>Casa Valduga</td>
+                    <td>Contente </td>
+                    <td>Dentil  </td>
+                    <td>Boni Natural </td>
+                    <td>Livealoe </td>
                 </tr>
                 <tr>
-                    <td><strong>Gin</strong></td>
-                    <td><strong>Grappa</strong></td>
-                    <td><strong>Licor</strong></td>
-                    <td><strong>Rum</strong></td>
+                    <td colspan="4"><strong>Escova de Dente</strong></td>
                 </tr>
                 <tr>
-                    <td>Markoff</td>
-                    <td>Casa Valduga</td>
-                    <td>Cointreau</td>
-                    <td>Malibu</td>
+                    <td>Contente </td>
+                    <td>Dentalclean</td>
+                    <td>Kess</td>
+                    <td>Dentil</td>
                 </tr>
                 <tr>
-                    <td><strong>Vinhos</strong></td>
-                    <td><strong>Vinhos</strong></td>
-                    <td><strong>Vodka</strong></td>
-                    <td><strong>Whisky</strong></td>
+                    <td colspan="4"><strong>Pasta de Dente</strong></td>
                 </tr>
                 <tr>
-                    <td>Casa Valduga</td>
-                    <td>Saint Germain</td>
-                    <td>Markoff</td>
-                    <td>J&B</td>
+                    <td>Contente </td>
+                    <td>Weleda </td>
+                    <td>Dentics </td>
+                    <td>Dentil</td>
+                </tr>
+                <tr>
+                    <td>Boni Natural</td>
+                    <td>Dia%</td>
+                    <td>DentalPrev</td>
+                    <td>Cativa Natureza </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Sabonete</strong></td>
+                </tr>
+                <tr>
+                    <td>Davene</td>
+                    <td>Vyvedas</td>
+                    <td>Lush</td>
+                    <td>Lola </td>
+                </tr>
+                <tr>
+                    <td>Orgânico Natural </td>
+                    <td>Weleda</td>
+                    <td>Unevie</td>
+                    <td>Cativa Natureza </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Shampoo/Condicionador</strong></td>
+                </tr>
+                <tr>
+                    <td>Skala</td>
+                    <td>Weleda </td>
+                    <td>Cadiveu</td>
+                    <td>Lola </td>
+                </tr>
+                <tr>
+                    <td>Surya</td>
+                    <td>Boni Natural </td>
+                    <td>Haskell Cosméticos </td>
+                    <td>Salon Line</td>
+                </tr>
+            </table>
+        </div>
+        <div id="infantil" style="display: block;">
+            <h2 class="laranja">Infantil</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
+                <tr>
+                    <td colspan="4"><strong>Creme de Prevenção para Assaduras</strong></td>
+                </tr>
+                <tr>
+                    <td>Vyvedas </td>
+                    <td>Fefa Pimenta  </td>
+                    <td>Cativa Natureza </td>
+                    <td>Hugo Naturals </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Fralda</strong></td>
+                </tr>
+                <tr>
+                    <td>Wiona </td>
+                    <td>Dipano </td>
+                    <td>Herbia Baby </td>
+                    <td>Mohini Eco</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Hidratante/Óleo par a Bebês</strong></td>
+                </tr>
+                <tr>
+                    <td>Davene </td>
+                    <td>Sementes da Terra </td>
+                    <td>BioEssência </td>
+                    <td>Weleda </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Sabonete para Bebês </strong></td>
+                </tr>
+                <tr>
+                    <td>Weleda</td>
+                    <td>Cativa Natureza </td>
+                    <td>Daveve - Bebê Vida </td>
+                    <td>Hugo Naturals</td>
                 </tr>
             </table>
         </div>
@@ -178,77 +280,203 @@
             <h2 class="laranja">Maquiagens</h2>
             <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
-                    <td><strong>Brandy</strong></td>
-                    <td><strong>Aguardente</strong></td>
-                    <td><strong>Cachaça</strong></td>
-                    <td><strong>Catuaba</strong></td>
-                </tr>
-
-                <tr>
-                    <td>Casa Valduga</td>
-                    <td>Sanhaçu</td>
-                    <td>Costa Brava</td>
-                    <td>Selvagem</td>
+                    <td colspan="4"><strong>Batom | Gloss | Balm</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Cerveja</strong></td>
+                    <td>Luna Essência</td>
+                    <td>Organela </td>
+                    <td>Cativa Natureza</td>
+                    <td>Elf </td>
                 </tr>
                 <tr>
-                    <td>Cerveja Hemmer</td>
-                    <td>Alvania</td>
-                    <td>Coruja</td>
-                    <td>Germânia</td>
+                    <td>Vymana </td>
+                    <td>Lush </td>
+                    <td>Vizzela</td>
+                    <td>Eudora</td>
                 </tr>
                 <tr>
-                    <td><strong>Cerveja</strong></td>
-                    <td><strong>Conhaque</strong></td>
-                    <td><strong>Espumantes</strong></td>
-                    <td><strong>Espumantes</strong></td>
+                    <td colspan="4"><strong>Base | BB Cream | Corretivos | Iluminador</strong></td>
                 </tr>
                 <tr>
-                    <td>Wienbier</td>
-                    <td>Presidente</td>
-                    <td>Salton</td>
-                    <td>Casa Valduga</td>
+                    <td>Cativa Natureza</td>
+                    <td>Organela </td>
+                    <td>Dona Orgânica</td>
+                    <td>Elf</td>
                 </tr>
                 <tr>
-                    <td><strong>Gin</strong></td>
-                    <td><strong>Grappa</strong></td>
-                    <td><strong>Licor</strong></td>
-                    <td><strong>Rum</strong></td>
+                    <td>Kat Von D </td>
+                    <td>Lush </td>
+                    <td>Vizzela</td>
+                    <td>Yes! Cosmetics </td>
                 </tr>
                 <tr>
-                    <td>Markoff</td>
-                    <td>Casa Valduga</td>
-                    <td>Cointreau</td>
-                    <td>Malibu</td>
+                    <td colspan="4"><strong>Blush</strong></td>
                 </tr>
                 <tr>
-                    <td><strong>Vinhos</strong></td>
-                    <td><strong>Vinhos</strong></td>
-                    <td><strong>Vodka</strong></td>
-                    <td><strong>Whisky</strong></td>
+                    <td>Cativa Natureza</td>
+                    <td>Origen Biocosméticos </td>
+                    <td>Catharine Hill </td>
+                    <td>Elf</td>
                 </tr>
                 <tr>
-                    <td>Casa Valduga</td>
-                    <td>Saint Germain</td>
-                    <td>Markoff</td>
-                    <td>J&B</td>
+                    <td>Bioart</td>
+                    <td>Vymana</td>
+                    <td>Vizzela</td>
+                    <td>Orglamix</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Pó Facial</strong></td>
+                </tr>
+                <tr>
+                    <td>Cativa Natureza</td>
+                    <td>Lush </td>
+                    <td>Yes! Cosmetics </td>
+                    <td>Elf</td>
+                </tr>
+                <tr>
+                    <td>Bioart</td>
+                    <td>Vymana</td>
+                    <td>Vizzela</td>
+                    <td>Kat Von D </td>
+                </tr>
+                <tr>
+                    <td>Catharine Hill </td>
+                    <td>The Balm </td>
+                    <td>Organela </td>
+                    <td>Beauty Without Cruelty</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Delineador</strong></td>
+                </tr>
+                <tr>
+                    <td>Cativa Natureza</td>
+                    <td>Lush </td>
+                    <td>Organela </td>
+                    <td>Elf</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Máscara para Cílios / Rímel </strong></td>
+                </tr>
+                <tr>
+                    <td>Cativa Natureza</td>
+                    <td>Lush </td>
+                    <td>Organela </td>
+                    <td>Elf</td>
+                </tr>
+                <tr>
+                    <td>Vymana</td>
+                    <td>Simple Organic</td>
+                    <td>Orglamix </td>
+                    <td>Herbia</td>
+                </tr>
+            </table>
+        </div>
+        <div id="alimenticio" style="display: block;">
+            <h2 class="laranja">Produtos alimentícios e bebidas não alcoólicas</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
+                <tr>
+                    <td colspan="4"><strong>Achocolatado</strong></td>
+                </tr>
+                <tr>
+                    <td>Apti</td>
+                    <td>Native</td>
+                    <td>Chocolife </td>
+                    <td>Taeq </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Açucar</strong></td>
+                </tr>
+                <tr>
+                    <td>Apti</td>
+                    <td>Native</td>
+                    <td>Chocolife </td>
+                    <td>Taeq </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Hidratante/Óleo par a Bebês</strong></td>
+                </tr>
+                <tr>
+                    <td>Davene </td>
+                    <td>Sementes da Terra </td>
+                    <td>BioEssência </td>
+                    <td>Weleda </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Sabonete para Bebês </strong></td>
+                </tr>
+                <tr>
+                    <td>Weleda</td>
+                    <td>Cativa Natureza </td>
+                    <td>Daveve - Bebê Vida </td>
+                    <td>Hugo Naturals</td>
                 </tr>
             </table>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div>
-                <p>© Copyright Mas nem peixe? Todos os direitos reservados.</p>
+        <div class="div_comidas">
+            <h2 class="verde">Se não comemos carne, comemos o que?</h2>
+            <p class="textMargin">Essa é uma frase que todo vegetariano ou vegano já ouviu alguma vez na vida e por isso, com a intenção de deixar água na boca, separei algumas amostras abaixo, não deixamos de comer nada apenas adaptamos para a versão <strong class="laranja">vegana</strong>!</p>
+            <div id="Falafel" style="display: block;">
+                <p class="div_textEsquerda"><strong class="verde">Falafel</strong></br></br>  
+                Falafel é um salgadinho originário do Oriente médio. Consiste em bolinhos fritos de grão-de-bico ou fava moídos, normalmente misturados com condimentos como alho, cebolinha, salsa, coentro e cominho.</p>
+                <img src="images/receitas/falafel.jpg" alt="Falafel" class="div_imgDireita">
+            </div>
+            <div id="Baião de dois" style="display: block;">
+                <img src="images/receitas/baiao.jpg" alt="Baião de Dois" class="div_imgEsquerda">
+                <p class="div_textDireita"><strong class="laranja">Baião</strong></br></br>  
+                    Baião de dois é um prato de origem cearense, tipico da região Nordeste e partes da região Norte do Brasil, como Rondônia, Acre, Amazonas e Pará. Consiste num preparado de arroz e feijão, de preferência o feijão verde ou feijão novo. É frequente adicionar-se queijo coalho. Não se adiciona carne-seca no Ceará.</p>            
+            </div>
+            <div id="pantanal" style="display: block;">
+                <p class="div_textEsquerda"><strong class="verde">Pastel</strong></br></br>  
+                    O pastel, tipicamente brasileiro, originou-se através de descendentes japoneses que adaptaram os guiozas e rolinha primavera, formando o pastel como é conhecido hoje em todo o Brasil.</p>
+                <img src="images/receitas/pastel.jpg" alt="Pantanal" class="div_imgDireita">                
+            </div>
+            <div id="plantacoes" style="display: block;">
+                <img src="images/receitas/bolo.jpg" alt="Plantação" class="div_imgEsquerda">   
+                <p class="div_textDireita"><strong class="laranja">Bolo Aniversário</strong></br></br>  
+                    Bolo é famoso em qualquer festa de aniversário, por que não fazer na versão vegana usando Leite condensado, achocolatado, morangos e uma calda de leite de coco?</p>               
+            </div>
+            <div id="parqEstad" style="display: block;">
+                <p class="div_textEsquerda"><strong class="verde">Churrasco</strong></br></br>  
+                    Churrasco na cultura brasileira é fortíssimo e nós não ficamos pra trás! Uma versão vegana cheia de sabor contendo cebola, soja, pimentão, tomate, abobrinha e beringela para agradar todo mundo.</p>
+                <img src="images/receitas/churrasco.jpg" alt="Parque Estadual" class="div_imgDireita">                
+            </div>
+            <div id="reserAmb" style="display: block;">
+                <img src="images/receitas/coxinha.jpg" alt="Reserva Ambiental" class="div_imgEsquerda">  
+                <p class="div_textDireita"><strong class="laranja">Coxinha</strong></br></br>  
+                    Aquele lanche rápido encontrado em todas as lanchonetes e que todo mundo adora, também temos na versão vegana e podemos usar e abusar dos sabores como coxinha de palmito, brócolis, carne de Jaca, soja e muito mais..</p>              
+            </div>
+            <div id="parqEstad" style="display: block;">
+                <p class="div_textEsquerda"><strong class="verde">Hamburguer</strong></br></br>  
+                    Ainda ficam surpresos quando descobrem que comemos hamburguer e que são deliciosos! Existem opções no mercado que o sabor se assemelha muito ao da carne bovina porem tudo feito de origem vegetal, incrível.</p>
+                <img src="images/receitas/hamburguer.jpg" alt="Parque Estadual" class="div_imgDireita">               
+            </div>
+            <div id="reserAmb" style="display: block;">
+                <img src="images/receitas/hotholl.jpg" alt="Reserva Ambiental" class="div_imgEsquerda">  
+                <p class="div_textDireita"><strong class="laranja">Hot holl</strong></br></br>  
+                    Hot roll é dos queridinhos da comida japonesa e muita gente acha que nunca mais poderá comer quando se torna vegetariana/vegana, mas existem opções como Shimeji, Shitake e alho poró.</p>                
+            </div>
+            <div id="parqEstad" style="display: block;">
+                <p class="div_textEsquerda"><strong class="verde">Torta</strong></br></br>  
+                    Torta é a comida rápida e fácil de fazer que todo mundo ama, substituindo um ingrediente aqui e outro ali, temos uma versão vegana da massa prontinha, e depois é só ser criativo com o recheio.</p>
+                <img src="images/receitas/torta.jpg" alt="Parque Estadual" class="div_imgDireita">                
+            </div>
+            <div id="reserAmb" style="display: block;">
+                <img src="images/receitas/molhoBranco.jpg" alt="Reserva Ambiental" class="div_imgEsquerda"> 
+                <p class="div_textDireita"><strong class="laranja">Molho branco</strong></br></br>  
+                    Macarrão ao molho branco saboroso e na versão vegana! Feito com tofu temperado com especiarias, ótima opção para aquele jantar romântico com o companheiro (a).</p>                       
             </div>
         </div>
-    </footer>
+        
+        <div class="boxReceitas">
+            <p>Uma delícia atrás da outra não é mesmo? Fazer a transição para o veganismo pode ser saborosa e temos que desmistificar o fato de que veganos não comem nada, podemos comer
+                muito bem e coisas saborosas, só precisamos reaprender a cozinhar e conhecer novos sabores!</p>
+        </div>
+    
+        <div class="rodape">
+            <p>© Copyright Mas nem peixe? Todos os direitos reservados a Karla Moncayo, aluna Bandtec!</p>
+        </div>
 </body>
 
 </html>
