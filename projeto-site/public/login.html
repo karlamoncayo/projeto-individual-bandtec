@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="images/iconVegan.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato-e-login.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cadastro-login.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/default.css">
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
@@ -33,39 +31,33 @@
     </header>
     <!--header fim-->
 
-    <div class="pag-login">
+    <div class="pagLogin">
         <div class="container">
             <div class="box-login">
                 <h1 class="laranja">Login</h1>
                 <form id="form_login" method="POST" onsubmit="return entrar()">
-                    Email:
-                    <input type="text" class="input-padrao" name="emailLogin">
+                    <input type="text" class="inputforms" name="emailLogin" placeholder="Email:">
                     <br>
-                    Senha:
-                    <input type="password" class="input-padrao" name="senhaLogin">
+                    <input type="password" class="inputforms" name="senhaLogin" placeholder="Senha:">
                     <br>
-                    <button id="btn_entrar" class="btn">Entrar</button>
+                    <button id="btn_entrar" class="btn">Entrar</button></br>
+                    <button id="btn_cadastrar" class="btnCad"><a href="cadastro.html" class="btnCad">Cadastre-se</a></button>
                 </form>
-
-                <div class="extra">
-                    <div id="div_erro" class="msg_erro">
-                    </div>
-
-                    <img src="images/espera.gif" id="img_aguarde"  >
-                    
+            </div>
+            <div class="gif">
+                <div id="div_erro" class="msg_erro">
                 </div>
+
+                <img src="images/espera.gif" id="img_aguarde"  >
+                
             </div>
         </div>
     </div>
 
     <!--footer inicio-->
-    <footer>
-        <div class="container">
-                <div>
-                    <p>© Copyright Mas nem peixe? Todos os direitos reservados a Karla Moncayo, aluna Bandtec!</p>
-                </div>
-        </div>
-    </footer>
+    <div class="rodape">
+        <p>© Copyright Mas nem peixe? Todos os direitos reservados a Karla Moncayo, aluna Bandtec!</p>
+    </div>
     <!--footer fim-->
 </body>
 

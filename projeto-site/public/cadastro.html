@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj. Individual | Meu nome aqui</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato-e-login.css">
+    <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="images/iconVegan.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro-login.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/default.css">
@@ -32,54 +32,45 @@
     </header>
     <!--header fim-->
 
-    <div class="cadastro bg-laranja-claro">
+    <div class="cadastro">
         <div class="container">
             <h1 class="laranja">Cadastre-se</h1>
-            <div class="formulario">
+            <div class="formulario bg-laranja-claro">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                    <input type="text" name="nome" class="inputforms" autofocus="autofocus"
                         placeholder="Primeiro nome" required>
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" class="input-padrao" autofocus="autofocus"
+                    <input type="text" name="sobrenome" class="inputforms" autofocus="autofocus"
                         placeholder="Sobrenome" required>
                     <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" class="input-padrao" autofocus="autofocus"
+                    <input type="text" name="telefone" class="inputforms" autofocus="autofocus"
                         placeholder="(xx)xxxxxxxxx" required maxlength="11">
                     <label for="idade">Idade</label>
-                    <input type="text" name="idade" class="input-padrao" autofocus="autofocus" placeholder="Idade"
+                    <input type="text" name="idade" class="inputforms" autofocus="autofocus" placeholder="Idade"
                         required minlength="2">
                     <label for="login">Email</label>
-                    <input type="text" name="login" class="input-padrao" placeholder="Usuário para login" required>
+                    <input type="text" name="login" class="inputforms" placeholder="Usuário para login" required>
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" class="input-padrao" placeholder="Insira a senha" required
+                    <input type="password" name="senha" class="inputforms" placeholder="Insira a senha" required
                         minlength="8">
 
                     <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
                 </form>
-                <div class="linha"></div>
-                <img src="images/espera.gif" id="img_aguarde" style="display: none;" width="100px">
-
                 <div id="div_erro" style="background-color: #FFF6E0; color: #309515; display: none;">
-                    Erro no cadastro, tente novamente!
+                    <p>Erro no cadastro, tente novamente!</p>
                 </div>
             </div>
-            <div class="imagem-lateral">
+            <div class="imagem-lateral" >
                 <img src="images/cadastro1.jpg">
             </div>
         </div>
     </div>
 
-
-
     <!--footer inicio-->
-    <footer>
-        <div class="container">
-            <div>
-                <p>© Copyright Mas nem peixe? Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+    <div class="rodape">
+        <p>© Copyright Mas nem peixe? Todos os direitos reservados a Karla Moncayo, aluna Bandtec!</p>
+    </div>
     <!--footer fim-->
 </body>
 

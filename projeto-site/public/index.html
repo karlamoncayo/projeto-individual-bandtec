@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/styleHome.css">
-    <link rel="stylesheet" href="css/footer.css">
     <title>Mas nem peixe?</title>
 </head>
 
@@ -25,7 +24,6 @@
                     <li><a href="#marcas">Principais Marcas</a></li>
                     <li><a href="#contato"> Contato</a></li>
                     <li><a href="pesquisaproduto.html"> Pesquisa de produtos</a></li>
-                    <li><a href="cadastro.html"> Cadastro</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
@@ -44,10 +42,14 @@
             <div class="oqev-content bg-verde-claro">
                 <h2 class="verde">O que é veganismo</h2>
                 <p>O veganismo, segundo definição da <a href="https://www.vegansociety.com/go-vegan/definition-veganism" target="blank" class="linkVegan">Vegan Society</a>, é um modo de viver (ou poderíamos chamar apenas de "escolha") que busca excluir, na medida do possível e praticável, todas as formas de exploração e crueldade contra os animais - seja na alimentação, no vestuário ou em outras esferas do consumo. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat
-                cupidatat non proident.</p>
+            </br>
+                    <ul>
+                        <li><strong>Ovolactovegetarianismo: </strong>no qual se consome ovo, leite e laticínios.</li></br>
+                        <li><strong>Lactovegetarianismo: </strong>quando se usa leite e laticínios, mas não ovos.</li></br>
+                        <li><strong>Ovovegetarianismo: </strong>que inclui ovo, mas não leite e laticínios.</li></br>
+                        <li><strong>Vegetarianismo estrito: </strong>que exclui todo produto de origem animal, até mel.</li></br>
+                        <li><strong>Vegano: </strong>que exclui tudo de origem animal dentro do possível e praticável.</li>
+                    </ul>
             </div>   
         </div>
     </section>
@@ -56,13 +58,13 @@
         <div class="container">
             <h2 class="laranja-claro">Quem sou</h2>
             <p>O <strong>"Mais Nem Peixe"</strong> é um Portal Web para as pessoas que são adeptas ou simpatizantes à filosofia de vida Vegana, que tem o objetivo de satisfazer a necessidade dos usuários em pesquisar e se informar sobre produtos que são liberados para o consumo de acordo com a filosofia.
-            <br />Visando atingir o público vegano, vegetariano, alérgicos a componentes de origem animal e simpatizantes da filosofia de vida vegana. Pensando na crescente adesão dessa filosofia e expansão das informações fornecidas sobre alimentação sustentável e consciente, teremos um mercado em crescimento pelos próximos anos, pois entre 2012 e 2019 tivemos um aumento de 75% de adeptos e a tendência é que essa porcentagem se mantenha e até mesmo aumente pelos próximos 2 anos.</p><br>
+            <br /></br>Visando atingir o público vegano, vegetariano, alérgicos a componentes de origem animal e simpatizantes da filosofia de vida vegana. Pensando na crescente adesão dessa filosofia e expansão das informações fornecidas sobre alimentação sustentável e consciente, teremos um mercado em crescimento pelos próximos anos, pois entre 2012 e 2019 tivemos um aumento de 75% de adeptos e a tendência é que essa porcentagem se mantenha e até mesmo aumente pelos próximos 2 anos.</p><br>
             <div class="team">
                 <table>
                     <tr>
-                        <td><p>Vegana à 4 anos, ativista independente da causa animal e ambiental tenho como objetivo ajudar pessoas a fazerem a transição para essa filosofia.<br/><br/>
+                        <td><p>Vegana à 4 anos, ativista independente da causa animal e ambiental tenho como objetivo ajudar pessoas a fazerem a transição para essa filosofia.<br/><br/></br>
                             Sabendo que uma mudança radical no estilo de vida não é fácil, e quando eu fiz minha transição não havia tanta ajuda e informações disponiveis como temos hoje,
-                            tenho total compreensão das dificuldades enfrentadas nesse processo, e por isso quero amenizar o impacto negativo ao máximo para pessoas simpatizantes a causa. <br/><br/>
+                            tenho total compreensão das dificuldades enfrentadas nesse processo, e por isso quero amenizar o impacto negativo ao máximo para pessoas simpatizantes a causa. <br/><br/></br>
                             Visando uma transição saudável e constante, conseguimos atingir o objetivo pessoal de cada um e chegamos cada vez mais perto da libertação de todos os animais na indústria da carne.
                         </p></td>
                         <td><img src="images/team/karlaAcao.jpg" class="team-pic" alt="Karla Moncayo" /></td>
@@ -180,10 +182,11 @@
     <section id="contato">
         <div class="container">
             <h2 class="verde-claro">Fale conosco</h2>
-            <p>Ainda tem dúvidas? Gostaria de fazer uma sugestão, comentário ou crítica?
+            <h4>Ainda tem dúvidas? Gostaria de fazer uma sugestão, comentário ou crítica?
                 <br />Utilize o formulário abaixo e se expresse como desejar. Seu contato é muito importante
-                para mim.</p>
-            <form action="/contato" method="POST">
+                para mim.</h4>
+            <div id="div_msg" style="display: none;" class="div_noneForm"></div>
+            <form action="/contato" method="POST" onsubmit="return validarContato()" novalidate>
                 <div>
                     <div>
                         <input type="text" placeholder="Nome" name="nomeContato" id="nomeContato">
@@ -191,68 +194,61 @@
                         <input type="text" placeholder="Telefone" name="telefoneContato" id="telefoneContato" maxlength="11">
                     </div>
                     <div>
-                        <textarea type="text" placeholder="Mensagem" name="mensagemContato" oninput="validandoMsg()" id="mensagemContato"></textarea>
-                        <p>Restam <strong id="caracter_rest">256</strong> caracteres!</p>
-                            <div>
-                                <button type="submit" name="enviar" onclick="validarContato()">Enviar</button>
-                            </div>
+                    <textarea type="text" maxlength="256" placeholder="Mensagem" name="mensagemContato" oninput="validandoMsg()" id="mensagemContato"></textarea>
+                    <p>Restam <strong id="caracter_rest">256</strong> caracteres!</p>
+                    <button type="submit" name="enviar">Enviar</button>        
                     </div>
-                    <div id="div_msgEmail" style="display: none;" class="div_noneForm">"Insira um endereço de e-mail
-                        válido!"</div>
-                    <div id="div_msgNome" style="display: none;" class="div_noneForm">"Nome não informado, por favor
-                        preencha este campo!"</div>
-                    <div id="div_msgMensagem" style="display: none;" class="div_noneForm">"Mensagem não informada!"</div>
-                    <div id="div_msgTelefone" style="display: none;" class="div_noneForm">"Telefone não informada!"</div>
                 </div>
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-                <div>
-                    <p>© Copyright Mas nem peixe? Todos os direitos reservados.</p>
-                </div>
-        </div>
-    </footer>
+    <div class="rodape">
+        <p>© Copyright Mas nem peixe? Todos os direitos reservados a Karla Moncayo, aluna Bandtec!</p>
+    </div>
 </body>
 
 </html>
 
 <script>
-    /*function validarContato(){
-        var nome = telefoneContato.value;
+    function validarContato(){
+        var nome = nomeContato.value;
         var email = emailContato.value;
         var telefone = telefoneContato.value;
         var mensagem = mensagemContato.value;
 
-        div_msgEmail.style = "display: none";
-        div_msgNome.style = "display: none";
-        div_msgMensagem.style = "display: none";
-        div_msgTelefone.style = "display: none";
+        let msgErro = [];
 
+        div_msg.style = "display: none";
+
+        if (nome == "") {
+            msgErro.push('<p>* Nome não informado, por favor preencha este campo!</p>');
+        }
         if (email == "" || email.indexOf('.') == -1 || email.indexOf('@') == -1) {
-            alert("Não informado");
+            msgErro.push('<p>* Insira um endereço de e-mail válido!</p>');
+        }
+        if (telefone == "") {
+            msgErro.push('<p>* Telefone não informado, por favor preencha este campo!</p>');
+        }
+        if (mensagem == "") {
+            msgErro.push('<p>* Mensagem não informada, por favor preencha este campo!</p>');
+        }
+
+        if (msgErro.length) {
+            div_msg.style = "display: block";
+            div_msg.innerHTML = '';
+            for (let x = 0; x <= msgErro.length - 1; x++) {
+                div_msg.innerHTML += msgErro[x]
+            }
             return false;
         }
-        else if (nome == "") {
-            div_msgNome.style = "display: block";
-            return false;
-        }
-        else if (mensagem == "") {
-            div_msgMensagem.style = "display: block";
-            return false;
-        }
-        else if (telefone == "") {
-            div_msgTelefone.style = "display: block";
-            return false;
-        }
+
         return true;
     }
 
     function validandoMsg() {
-        let qtd = txt_area.value.length;
+        let qtd = mensagemContato.value.length;
         let rest = 256 - qtd;
         caracter_rest.innerHTML = rest;
-    }*/
+    }
 </script>

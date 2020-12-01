@@ -14,7 +14,7 @@ h3 {font-weight: bold; font-size: 38px; margin: 0 0 1rem;}
 .bg-verde-claro {background-color: #C9DFC3;}
 .laranja {color: #D19A0B;}
 .bg-laranja {background-color: #D19A0B;}
-.laranja-claro {color: #FFF6E0;}
+.laranja-claro {color: rgb(255, 246, 224);}
 .bg-laranja-claro {background-color: rgb(255, 246, 224);}
 
 .textMargin{margin-left: 4%; margin-right: 4%;}

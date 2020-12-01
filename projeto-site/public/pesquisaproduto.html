@@ -15,7 +15,7 @@
     <title>Pesquisa de produtos</title>
 </head>
 
-<body >
+<body onload="verificar_autenticacao()">
     <header>
         <div>
             <nav>
@@ -25,7 +25,7 @@
                     <li><a href="index.html"> Quem sou</a></li>
                     <li><a href="index.html">Principais Marcas</a></li>
                     <li><a href="index.html"> Contato</a></li>
-                    <li><a href="#pesquisaproduto"> Pesquisa de produtos</a></li>
+                    <li><a href="#pesquisaproduto"> Pesquisa de produtos </a></li>
                     <li> Bem-vindo (a), <b id="b_usuario"></b></li>
                     <li><a href="" onclick="logoff()">Sair</a></li>
                 </ul>
@@ -35,23 +35,27 @@
     <main>
     <section id="pesquisaBox">
         <div class="container">
-            <form>
+            <div class="formPesquisa">
                 <div>
-                    <select>
-                        <option>Selecione uma categoria: </option>
-                        <option>Bebidas Alcoólicas</option>
-                        <option>Cosméticos</option>
-                        <option>Higiene pessoal</option>
+                    <select id="selectPesquisa">
+                        <option value="Selecione">Selecione uma categoria: </option>
+                        <option value="Bebidas Alcoólicas">Bebidas Alcoólicas</option>
+                        <option value="Cosméticos">Cosméticos</option>
+                        <option value="Higiene pessoal">Higiene pessoal</option>
+                        <option value="Alimentícios">Alimentícios</option>
+                        <option value="Maquiagem">Maquiagem</option>
+                        <option value="Infantil">Infantil</option>
+                        <option value="Produtos de limpeza" >Produtos de limpeza</option>
                     </select>
-                    <button type="submit"><strong>Pesquisar</strong></button>
+                    <button onclick="pesquisar()"><strong>Pesquisar</strong></button>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
 
-    <section id="tabelas">
+    <section id="tabelas" style="display: none;">
 
-        <div id="cosmeticos" style="display: block;">
+        <div id="cosmeticos" style="display: none;">
             <h2 class="laranja">Cosméticos</h2>
             <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
@@ -152,7 +156,7 @@
                 </tr>
             </table>
         </div>
-        <div id="higienePessoal" style="display: block;">
+        <div id="higienePessoal" style="display: none;">
             <h2 class="laranja">Higiene pessoal</h2>
             <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
@@ -235,7 +239,7 @@
                 </tr>
             </table>
         </div>
-        <div id="infantil" style="display: block;">
+        <div id="infantil" style="display: none;">
             <h2 class="laranja">Infantil</h2>
             <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
@@ -276,7 +280,7 @@
                 </tr>
             </table>
         </div>
-        <div id="maquiagem" style="display: block;">
+        <div id="maquiagem" style="display: none;">
             <h2 class="laranja">Maquiagens</h2>
             <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
@@ -371,44 +375,126 @@
                 </tr>
             </table>
         </div>
-        <div id="alimenticio" style="display: block;">
+        <div id="alimenticio" style="display: none;">
             <h2 class="laranja">Produtos alimentícios e bebidas não alcoólicas</h2>
             <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
                 <tr>
-                    <td colspan="4"><strong>Achocolatado</strong></td>
+                    <td colspan="4"><strong>Insumos essenciais</strong></td>
                 </tr>
                 <tr>
-                    <td>Apti</td>
-                    <td>Native</td>
-                    <td>Chocolife </td>
-                    <td>Taeq </td>
+                    <td>Apti </td>
+                    <td>Arcolor</td>
+                    <td>Alto Alegre </td>
+                    <td>Organic Saúde Natural</td>
                 </tr>
                 <tr>
-                    <td colspan="4"><strong>Açucar</strong></td>
+                    <td>Caldo bom</td>
+                    <td>Hikari</td>
+                    <td>Arroz Prato Fino</td>
+                    <td>Sabor Máximo</td>
                 </tr>
                 <tr>
-                    <td>Apti</td>
-                    <td>Native</td>
-                    <td>Chocolife </td>
-                    <td>Taeq </td>
+                    <td>Tio João</td>
+                    <td>Joselito</td>
+                    <td>Melitta</td>
+                    <td>Hemmer</td>
                 </tr>
                 <tr>
-                    <td colspan="4"><strong>Hidratante/Óleo par a Bebês</strong></td>
+                    <td>Dia%</td>
+                    <td>Superbom </td>
+                    <td>Mika</td>
+                    <td>Qualitá</td>
                 </tr>
                 <tr>
-                    <td>Davene </td>
-                    <td>Sementes da Terra </td>
-                    <td>BioEssência </td>
-                    <td>Weleda </td>
+                    <td>São Braz</td>
+                    <td>Dona Benta</td>
+                    <td>Sol</td>
+                    <td>Wickbold</td>
                 </tr>
                 <tr>
-                    <td colspan="4"><strong>Sabonete para Bebês </strong></td>
+                    <td>Dr. Oetker</td>
+                    <td>Ducoco</td>
+                    <td>Copra </td>
+                    <td>QualiCôco </td>
                 </tr>
                 <tr>
-                    <td>Weleda</td>
-                    <td>Cativa Natureza </td>
-                    <td>Daveve - Bebê Vida </td>
-                    <td>Hugo Naturals</td>
+                    <td>Petybon </td>
+                    <td>Urbano</td>
+                    <td>Kenko</td>
+                    <td>Sakura</td>
+                </tr>
+                <tr>
+                    <td>Sora</td>
+                    <td>Aurora</td>
+                    <td>Castelo </td>
+                    <td>Santa Amália </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Refrigerantes</strong></td>
+                </tr>
+                <tr>
+                    <td>Wewi</td>
+                    <td>Gloops</td>
+                    <td>Convenção</td>
+                    <td>Guaraná Cruzeiro</td>
+                </tr>
+            </table>
+        </div>
+        <div id="bebidasAlcoolicas" style="display: none;">
+            <h2 class="laranja">Bebidas alcoólicas</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
+                <tr>
+                    <td colspan="4"><strong>Cerveja</strong></td>
+                </tr>
+                <tr>
+                    <td>Cerveja Hemmer</td>
+                    <td>Alvania</td>
+                    <td>Coruja</td>
+                    <td>Germânia</td>
+                </tr>
+                <tr>
+                    <td>Praya®</td>
+                    <td>A Gata Preta</td>
+                    <td>Old Capitain </td>
+                    <td>Wienbier</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Espumantes</strong></td>
+                </tr>
+                <tr>
+                    <td>Salton</td>
+                    <td>Cereser</td>
+                    <td>Casa Valduga</td>
+                    <td>Maria Valdug</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Vinhos</strong></td>
+                </tr>
+                <tr>
+                    <td>Dom Bosco</td>
+                    <td>Luiz Valduga</td>
+                    <td>Salton</td>
+                    <td>Sangue do Vale</td>
+                </tr>
+            </table>
+        </div>
+        <div id="limpeza" style="display: none;">
+            <h2 class="laranja">Limpeza</h2>
+            <table width="80%" cellpadding="10%" cellspacing="0" class="tabela">
+                <tr>
+                    <td colspan="4"><strong>Limpeza</strong></td>
+                </tr>
+                <tr>
+                    <td>Búfalo</td>
+                    <td>Ypê </td>
+                    <td>Urca </td>
+                    <td>Qualitá </td>
+                </tr>
+                <tr>
+                    <td>UAU</td>
+                    <td>Vinagreen</td>
+                    <td>UFE - Coco</td>
+                    <td>Tixan Ypê</td>
                 </tr>
             </table>
         </div>
@@ -480,3 +566,51 @@
 </body>
 
 </html>
+
+<script>
+
+    function pesquisar(){
+        tabelas.style = "display: none"; 
+        bebidasAlcoolicas.style = "display: none";
+        cosmeticos.style = "display: none";
+        higienePessoal.style = "display: none";
+        alimenticio.style = "display: none";
+        maquiagem.style = "display: none";
+        limpeza.style = "display: none";
+        infantil.style = "display: none";
+
+        if(selectPesquisa.value == "Bebidas Alcoólicas"){
+            bebidasAlcoolicas.style = "display: block";
+            tabelas.style = "display: block"; 
+        }
+        else if(selectPesquisa.value == "Cosméticos"){
+            cosmeticos.style = "display: block";
+            tabelas.style = "display: block"; 
+        }
+        else if(selectPesquisa.value == "Higiene pessoal"){
+            higienePessoal.style = "display: block";
+            tabelas.style = "display: block"; 
+        }
+        else if(selectPesquisa.value == "Alimentícios"){
+            alimenticio.style = "display: block";
+            tabelas.style = "display: block"; 
+        }
+        else if(selectPesquisa.value == "Maquiagem"){
+            maquiagem.style = "display: block";
+            tabelas.style = "display: block"; 
+        }
+        else if(selectPesquisa.value == "Produtos de limpeza"){
+            limpeza.style = "display: block";
+            tabelas.style = "display: block"; 
+        }
+        else if(selectPesquisa.value == "Infantil"){
+            infantil.style = "display: block";
+            tabelas.style = "display: block"; 
+        }
+        else if(selectPesquisa.value == "Selecione"){
+            alert("Por favor, selecione uma categoria!");
+        }
+}
+
+
+</script>

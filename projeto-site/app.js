@@ -6,7 +6,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usuariosRouter = require('./routes/usuarios');
+var contatoRouter = require('./routes/contato');
 var Contato = require('./models').Contato;
+
+
 
 var app = express();
 
@@ -18,6 +21,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/usuarios', usuariosRouter);
+// app.use('/contato', contatoRouter);
+
 
 app.post('/contato', function (req, res) {
     Contato.create({
@@ -26,7 +31,8 @@ app.post('/contato', function (req, res) {
         telefoneContato: req.body.telefoneContato,
         mensagemContato: req.body.mensagemContato
     }).then(function () {
-        res.sendFile(__dirname + "public/index.html");
+        console.log("Foi!");
+        res.redirect('/')
     }).catch(function (erro) {
         res.send("Erro ao enviar!" + erro);
     })

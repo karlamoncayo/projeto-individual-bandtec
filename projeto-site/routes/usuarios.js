@@ -62,12 +62,12 @@ router.get('/sessao/:login', function (req, res, next) {
 
 	let login = req.params.emailLogin;
 
-	console.log(`Verificando se o usuário ${emailLogin} tem sessão`);
+	console.log(`Verificando se o usuário ${login} tem sessão`);
 
 	let tem_sessao = false;
 
 	for (let u = 0; u < sessoes.length; u++) {
-		if (sessoes[u] == emailLogin) {
+		if (sessoes[u] == login) {
 			tem_sessao = true;
 			break;
 		}
@@ -75,7 +75,7 @@ router.get('/sessao/:login', function (req, res, next) {
 
 	if (tem_sessao) {
 
-		let mensagem = `Usuário ${emailLogin} possui sessão ativa!`;
+		let mensagem = `Usuário ${login} possui sessão ativa!`;
 
 		console.log(mensagem);
 
@@ -94,17 +94,17 @@ router.get('/sair/:login', function (req, res, next) {
 
 	let login = req.params.emailLogin;
 
-	console.log(`Finalizando a sessão do usuário ${emailLogin}`);
+	console.log(`Finalizando a sessão do usuário ${login}`);
 
 	let nova_sessoes = [];
 
 	for (let u = 0; u < sessoes.length; u++) {
-		if (sessoes[u] != emailLogin) {
+		if (sessoes[u] != login) {
 			nova_sessoes.push(sessoes[u]);
 		}
 	}
 	sessoes = nova_sessoes;
-	res.send(`Sessão do usuário ${emailLogin} finalizada com sucesso!`);
+	res.send(`Sessão do usuário ${login} finalizada com sucesso!`);
 });
 
 

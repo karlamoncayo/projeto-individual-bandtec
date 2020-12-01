@@ -1,13 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var sequelize = require('../models').sequelize;
 var Contato = require('../models').Contato;
 var app = express();
 
-let sessoes = [];
-
 /* Enviar formulário de cadastro */
-app.post('/contato', function(req,res){
+app.post('/', function(req,res){
 	Contato.create({ // Pega o objeto Contato criado no Models para criar um insert das informações nos campos especificados.
 		nomeContato: req.body.nomeContato,
 		emailContato: req.body.emailContato,

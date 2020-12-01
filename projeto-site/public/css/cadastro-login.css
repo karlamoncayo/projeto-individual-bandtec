@@ -1,0 +1,63 @@
+/* PÁGINA DO CADASTRO */
+
+.cadastro .container {overflow: auto; padding-bottom: 40px; padding-top: 4%;}
+
+.cadastro h1{text-align: center;}
+
+.formulario {float: left; width: 500px; padding-top: 3%; padding-left: 10%; box-shadow:  5px 5px 5px 2px #D19A0B}
+form label, form p{display: block; font-size: 20px; margin-bottom:10px;}
+
+.btn {
+    color: white;
+    background-color: #309515;
+    margin: 20px 0 50px 0;
+    border: 0;
+    width: 25%; 
+    text-transform: uppercase; 
+    margin-left: 30%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.btnCad{font-size: 12px; cursor: pointer; background-color: #309515; text-decoration: none; text-transform: uppercase; color: white; padding: 8px; border-radius: 5px;}
+
+.imagem-lateral {float: left; width: 660px; }
+.cadastro img {float: right; width: 95%; height: 690px;}
+
+.inputforms {display: block; margin-bottom: 20px; padding: 10px 25px; width: 75%; border-radius: 5px; border: solid 1px #bbbbbb;}
+
+.div-radio {margin-bottom: 30px;}
+
+/* FIM PÁGINA DE CADASTRO */
+
+/* PÁGINA DO LOGIN */
+
+.pagLogin {background-image: url(../images/background-login.png); text-align: center; padding: 50px 0; padding-top: 10%;}
+
+.pagLogin h1 {margin-bottom: 40px;}
+
+.pagLogin .inputforms {width: 50%; display: inline-block;}
+
+.box-login {display: inline-block; box-shadow:  5px 5px 5px 2px #309515; padding: 60px 20px 25px 20px; border-radius: 20px; width: 400px;}
+
+.pagLogin .btn {display: block; float: none; margin: auto;}
+
+/* FIM PÁGINA DO LOGIN */
+
+/* GIF */
+
+.gif {margin: 10px;}
+.gif img {height: 150px; width: 250px; visibility: hidden;}
+.gif .msg_erro {background-color:  #D19A0B; color: black; visibility: hidden;}
+/* FIM GIF */
+
+/* FOOTER */
+.rodape{background-color: #E3E3E3; height: 70px; margin-top: -20px;}
+.rodape p{padding-top: 22px; text-align: center;}
+/* FIM FOOTER */
+
+::-webkit-scrollbar-track {background-color:#FFF6E0;}
+::-webkit-scrollbar {width: 6px; background: #309515;}
+::-webkit-scrollbar-thumb {background: #C9DFC3;}
