@@ -9,8 +9,6 @@ var usuariosRouter = require('./routes/usuarios');
 var contatoRouter = require('./routes/contato');
 var Contato = require('./models').Contato;
 
-
-
 var app = express();
 
 app.use(logger('dev'));

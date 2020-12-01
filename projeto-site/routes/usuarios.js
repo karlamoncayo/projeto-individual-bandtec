@@ -51,6 +51,7 @@ router.post('/cadastrar', function (req, res, next) {
 		console.log(`Registro criado: ${resultado}`)
 		res.send(resultado);
 	}).catch(erro => {
+		console.log(`Passou aqui`)
 		console.error(erro);
 		res.status(500).send(erro.message);
 	});

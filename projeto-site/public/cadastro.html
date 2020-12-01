@@ -79,7 +79,8 @@
 <script>
 
     function cadastrar() {
-        aguardar();
+        // aguardar();
+        
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -103,11 +104,11 @@
         return false;
     }
 
-    function aguardar() {
+    /*function aguardar() {
         btn_entrar.disabled = true;
         img_aguarde.style.display = 'block';
         div_erro.style.display = 'none';
-    }
+    }*/
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
